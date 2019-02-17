@@ -1,0 +1,30 @@
+<div>
+    <form #pform="ngForm" ngNativeValidate (ngSubmit)="userlogin()">
+    <div class="user-container">
+        <p><b>User Login</b></p>
+        <hr>
+        <div class="login-fields">
+            <table>
+
+                <tr>
+                    <td><b>Email Id :</b></td>
+                    <td> <input type="text" [(ngModel)]="login.email" name="username" placeholder="Email Id" required>
+                        <br /></td>
+                </tr>
+
+                <tr>
+                    <td> <b>Password :</b> </td>
+                    <td><input type="password" [(ngModel)]="login.password" name="password" placeholder="Password"
+                            required><br />
+                    </td>
+                </tr>
+            </table>
+            <button class ="button" type="submit"[routerLink]="['/app-dashboard']" value="Submit"><b>Sign In</b></button>
+            <button class="button" type="submit"[routerLink]="['/registration-detail']" value="submit"><b>Create Account</b></button>
+
+
+        </div>
+    </div>
+</form>
+</div>
+ 

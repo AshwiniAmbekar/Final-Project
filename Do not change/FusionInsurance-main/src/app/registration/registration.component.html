@@ -1,0 +1,110 @@
+<div id="ali">
+    <form #pform="ngForm" class="form-horizontal" ngNativeValidate (ngSubmit)="Registration(pform)">
+        <div class="register-container">
+            <h2><b>Registration</b></h2>
+            <hr>
+            <div class="registration-fields">
+
+                <div class="form-group" [class.has-error]="uname.invalid && uname.touched">
+                    <label class="uname1"><b>User Name</b> <span style="color:red"></span></label>
+                    <div class="uname2">
+                        <input type="text" id="uname3" name="userName" [(ngModel)]="registration.userName"
+                            #uname="ngModel" placeholder="Alex123" class="form-control" pattern="[a-zA-Z ]*[0-9]*"
+                            autofocus required>
+                        <span style="color:red;" class="help" *ngIf="uname.invalid && uname.touched">Enter the
+                            user-name</span>
+                    </div>
+                </div>
+
+                <div class="form-group" [class.has-error]="fname.invalid && fname.touched">
+                    <label class="fname1"><b>First Name </b><span style="color:red"></span></label>
+                    <div class="fname2">
+                        <input type="text" id="fname3" name="firstName" [(ngModel)]="registration.firstName"
+                            #fname="ngModel" placeholder="Alex" class="form-control" pattern="[a-zA-Z ]*" autofocus
+                            required>
+                        <span style="color:red;" class="help" *ngIf="fname.invalid && fname.touched">Enter the
+                            first-name</span>
+                    </div>
+                </div>
+
+
+                <div class="form-group" [class.has-error]="lname.invalid && lname.touched">
+                    <label class="lname1"><b>Last Name </b><span style="color:red"></span></label>
+                    <div class="lname2">
+                        <input type="text" id="lname3" name="lastName" [(ngModel)]="registration.lastName"
+                            #lname="ngModel" placeholder="Thomas" class="form-control" pattern="[a-zA-Z ]*" autofocus
+                            required>
+                        <span style="color:red;" class="help" *ngIf="lname.invalid && lname.touched">Enter the
+                            last-name</span>
+                    </div>
+                </div>
+
+                <div class="drop-down">
+                    <b> Gender </b> : <select [(ngModel)]="registration.gender" name="gender">
+                        <option value="select">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <br />
+                </div>
+
+
+                <div class="form-group" [class.has-error]="mno.invalid && mno.touched">
+                    <label class="mno1"><b>Mobile Number </b><span style="color:red"></span></label>
+                    <div class="lmno2">
+                        <input type="text" id="mno3" name="lastName" [(ngModel)]="registration.mobile" #mno="ngModel"
+                            placeholder="12346546586" class="form-control" minlength=10 maxlength=10
+                            (keypress)="keyPress($event)" required>
+                        <span style="color:red;" class="help" *ngIf="mno.invalid && mno.touched">Enter the
+                            Mobile Number</span>
+                    </div>
+                </div>
+
+
+                <div class="form-group" [class.has-error]="emailid.invalid && emailid.touched">
+                    <label class="emailid1"><b>Email ID </b><span style="color:red"></span></label>
+                    <div class="emailid2">
+                        <input type="text" id="emailid3" name="email" [(ngModel)]="registration.email"
+                            #emailid="ngModel" placeholder="example@something.com" class="form-control" required>
+                        <span style="color:red;" class="help" *ngIf="emailid.invalid && emailid.touched">Enter the
+                            Email ID</span>
+                    </div>
+                </div>
+
+                <div class="form-group" [class.has-error]="pass.invalid && pass.touched">
+                        <label class="pass1"><b> Password </b><span style="color:red"></span></label>
+                        <div class="pass2">
+                            <input type="password" id="pass3" name="password" placeholder="Password" [(ngModel)]="registration.password"
+                                #pass="ngModel" class="form-control" required>
+                            <span style="color:red;" class="help" *ngIf="pass.invalid && pass.touched">Enter the
+                                Password</span>
+                        </div>
+                    </div> 
+
+
+                <div class="form-group">
+                    <b>Confirm Password :</b> <input type="password" [(ngModel)]="registration.confirmPassword"
+                        name="confirmPassword" placeholder="Enter Password again" required>
+                    <br />
+                </div>
+                <p>{{array['password']}}</p>
+
+                <b>Address :</b> <input type="text" [(ngModel)]="registration.address" name="address"
+                    placeholder="Address" autofocus required>
+                <br />
+
+                <b> City :</b> <input type="text" [(ngModel)]="registration.city" name="city" placeholder="City"
+                    autofocus required>
+                <br />
+
+                <b>State :</b> <input type="text" [(ngModel)]="registration.state" name="state" placeholder="State"
+                    required>
+                <br />
+
+                <input type="submit" value="Register" />
+
+
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<h3>Hello {{ name }} </h3>
+<div>
+  <ul>
+    <li id="pre-li"><a [routerLink]="['/app-premium-calculator']">Premium Calculator</a></li>
+    <li id="buy-li"><a [routerLink]="['/app-buyinsurance']">Buy Insurance</a></li>
+    <li id="renew-li"><a [routerLink]="['/app-renew']">Renew Insurance</a></li>
+    <li id="claim-li"><a [routerLink]="['/app-claim']">Claim Insurance</a></li>
+   
+  </ul>
+</div>
+
+<div>
+<router-outlet></router-outlet>
+</div>

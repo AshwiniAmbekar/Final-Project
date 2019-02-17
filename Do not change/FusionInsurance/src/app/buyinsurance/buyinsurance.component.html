@@ -1,0 +1,63 @@
+
+ <div id ="form">
+   <form #pform="ngForm" ngNativeValidate (ngSubmit)="purchase(purchaseForm)">
+    <div class="insurance-container">
+      <h2><b>Buy Insurance</b></h2>
+
+      <div class="buyinsurance-fields">
+        <table>
+          <tr>
+
+            <td><b>Plan Duration:</b></td>
+            <td><input type="radio" [(ngModel)]="buyinsurance.plan" name="plan" value="1"><b> One Year</b> <br>
+              <input type="radio" [(ngModel)]="buyinsurance.plan" name="plan" value="2"><b> Two Year</b> <br>
+              <input type="radio" [(ngModel)]="buyinsurance.plan" name="plan" value="3"><b> Three Year</b> <br>
+              <br /></td>
+          </tr>
+          <tr>
+
+              <td><b>Plan Type:</b></td>
+              <td><input type="radio" [(ngModel)]="buyinsurance.planType" name="planType" value="1"> <b>Third Party Liability</b> <br>
+                <input type="radio" [(ngModel)]="buyinsurance.planType" name="planType" value="2"> <b>Comprehensive</b><br>
+            
+                <br /></td>
+            </tr>
+
+          <tr>
+            <td><b> Date & Time:</b></td>
+            <td><input type="date" [(ngModel)]="buyinsurance.dateAndTime" name="dateAndTime" required>
+              <br /></td>
+          </tr>
+          <tr>
+            <td><b>Vehicle Type :</b></td>
+            <td> <input type="text" [(ngModel)]="buyinsurance.vehicleType" name="vehicleType"
+                placeholder="e.g. 4-wheeler/2-wheeler" required>
+              <br /></td>
+          </tr>
+          <tr>
+            <td><b> Model :</b></td>
+            <td> <input type="text" [(ngModel)]="buyinsurance.model" name="model" placeholder="Model" required>
+              <br /></td>
+          </tr>
+          <tr>
+            <td><b>Driving License :</b></td>
+            <td> <input type="text" [(ngModel)]="buyinsurance.drivingLicence" name="drivingLicense"
+                placeholder="Driving license" required>
+              <br /></td>
+          </tr>
+          <tr>
+            <td><b>Engine Number :</b></td>
+            <td><input type="text" [(ngModel)]="buyinsurance.engineNumber" name="engineNumber"
+                placeholder="Engine Number" required>
+              <br /></td>
+          </tr>
+       
+        </table>
+        
+        <button class ="button" type="submit"[routerLink]="['/app-payment']" value="Submit">Proceed To Pay</button>
+      </div>
+     
+</div>
+    
+  </form>
+  

@@ -1,0 +1,35 @@
+<div><form id="claim" #pform="ngForm" ngNativeValidate (ngSubmit)="userlogin(userform)">
+  <div class="claim-container">
+    <p><b>Claim Insurance</b></p>
+    <hr>
+    <div>
+      <table>
+
+        <tr>
+          <td><b>Registration No:</b></td>
+          <td> <input type="text" [(ngModel)]="claimNo" name="claimNo" placeholder="registration no" required>
+            <br /></td>
+        </tr>
+
+        <tr>
+          <td><b> Mobile Number:</b> </td>
+          <td><input type="text" [(ngModel)]="claim.mobileNumber" name="mobileNumber" placeholder="mobile Number" required>
+            <br /> </td>
+        </tr>
+        <tr>
+            <td> <b>Reason To Claim: </b></td>
+            <td><input type="text" [(ngModel)]="claim.reasonToClaim" name="reasonToClaim" placeholder="natural disaster" required>
+              <br /> </td>
+          </tr>
+      </table>
+      <button type="submit"  [routerLink]="['/app-claim-request']" ><b>Request</b></button>
+
+
+    </div>
+  </div>
+</form>
+
+<div>
+  
+</div>
+</div>

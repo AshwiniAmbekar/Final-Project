@@ -1,0 +1,42 @@
+#fourwheeler {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #fourwheeler td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #cfourwheeler tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #fourwheeler tr:hover {background-color: #ddd;}
+  
+  #fourwheeler th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: tan;
+    color: white;
+  }
+  h2{
+      background-color: grey
+  }
+  .button {
+    background-color:navy;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+div{
+    text-align: center
+}
+
+  

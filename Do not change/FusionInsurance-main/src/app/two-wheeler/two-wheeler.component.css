@@ -1,0 +1,43 @@
+#twowheeler {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #twowheeler td, #two th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #twowheeler tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #twowheeler tr:hover {background-color: #ddd;}
+  
+  #twowheeler th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: tan;
+    color: white;
+  }
+  h2{
+      background-color: grey
+  }
+  .button {
+    background-color:navy;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+div{
+    text-align: center
+}
+  .button{
+      color:white
+  }

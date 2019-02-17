@@ -1,0 +1,51 @@
+<div id ="main">
+    <form class="form" #pform="ngForm" ngNativeValidate (ngSubmit)="userlogin()">
+    <div class="payment">
+        <h1><b>Payment</b></h1>
+        <hr>
+        <div class="payment-fields">
+            <table>
+
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td> <input type="text" [(ngModel)]="name" name="name" placeholder="John Rosh" required>
+                        <br /></td>
+                </tr>
+
+                <tr>
+                    <td> <b>Debit Card Number:</b> </td>
+                    <td><input type="text" [(ngModel)]="debitCardNumber" name="debitCardNumber" placeholder="1111 2222 3333 4545"
+                            required><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <b>Exp Month:</b> </td>
+                    <td><input type="text" [(ngModel)]="expMonth" name="expMonth" placeholder="05"
+                            required><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <b>Exp Year:</b> </td>
+                    <td><input type="text" [(ngModel)]="expYear" name="expYear" placeholder="2023"
+                            required><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <b>CVV Number:</b> </td>
+                    <td><input type="text" [(ngModel)]="cvv" name="cvv" placeholder="485"
+                            required><br />
+                    </td>
+                </tr>
+                
+
+            </table>
+            <button class ="button"  type="submit"[routerLink]="['/app-print-recipt']" value="Submit"><b>Pay</b></button>
+            
+
+
+        </div>
+    </div>
+</form>
+</div>
+
+

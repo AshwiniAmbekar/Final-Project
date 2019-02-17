@@ -1,0 +1,79 @@
+<div id="form">
+  <form #pform="ngForm" ngNativeValidate (ngSubmit)="purchase(pform)">
+    <div class="insurance-container">
+      <h2><b>Buy Insurance</b></h2>
+
+      <div class="buyinsurance-fields">
+        <table>
+          <tr>
+
+              <div class="drop-down">
+                  <b> Plan Duration </b> : <select [(ngModel)]="buyinsurance.planDuration" name="planDuration">
+                      <option value="1">One Year</option>
+                      <option value="2">Two Years</option>
+                      <option value="3">Three Years</option>
+                  </select>
+                  <br />
+              </div>
+
+            <!-- <td><b>Plan Duration:</b></td>
+            <td><input type="radio" [(ngModel)]="buyinsurance.planDuration" name="planDuration" value="1"><b> One Year</b> <br>
+              <input type="radio" [(ngModel)]="buyinsurance.planDuration" name="planDuration" value="2"><b> Two Year</b> <br>
+              <input type="radio" [(ngModel)]="buyinsurance.planDuration" name="planDuration" value="3"><b> Three Year</b> <br>
+              <br /></td>
+          </tr>  -->
+
+
+          <div class="drop-down1">
+              <b> Plan Type:</b> : <select [(ngModel)]="buyinsurance.planType" name="planType">
+                  <option value="select">Select</option>
+                  <option value="1">Third Party Liability </option>
+                  <option value="2">Comprehensive</option>
+              </select>
+              <br />
+          </div>
+
+          <!-- <tr>
+            <td><b>Plan Type:</b></td>
+            <td><input type="radio" [(ngModel)]="buyinsurance.planType" name="planType" value="1"> <b>Third Party
+                Liability</b> <br>
+              <input type="radio" [(ngModel)]="buyinsurance.planType" name="planType" value="2">
+              <b>Comprehensive</b><br>
+              <br /></td>
+          </tr> -->
+
+
+          <tr>
+            <td><b>Vehicle Type :</b></td>
+            <td> <input type="text" [(ngModel)]="buyinsurance.vehicleType" name="vehicleType"
+                placeholder="e.g. 4-wheeler/2-wheeler" required>
+              <br /></td>
+          </tr>
+
+          <tr>
+            <td><b> Model :</b></td>
+            <td> <input type="text" [(ngModel)]="buyinsurance.vehicleModel" name="vehicleModel" placeholder="Model" required>
+              <br /></td>
+          </tr>
+
+          <tr>
+            <td><b>Driving License :</b></td>
+            <td> <input type="text" [(ngModel)]="buyinsurance.drivingLicence" name="drivingLicense"
+                placeholder="Driving license" required>
+              <br /></td>
+          </tr>
+
+          <tr>
+            <td><b>Engine Number :</b></td>
+            <td><input type="text" [(ngModel)]="buyinsurance.engineNumber" name="engineNumber"
+                placeholder="Engine Number" required>
+              <br /></td>
+          </tr>
+
+        </table>
+        <button class="button" type="submit" value="Submit"><b>Proceed To
+            Pay</b></button>
+      </div>
+    </div>
+  </form>
+</div>

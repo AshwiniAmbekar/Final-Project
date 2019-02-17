@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(228, 8, 8, 0.2);
+  transition: 0.5s;
+  width: 40%;
+ 
+  margin: 0 auto; 
+        float: none; 
+        margin-bottom: 10px; 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+.button {
+  background-color: #4CAF50;
+  color: rgb(10, 31, 122);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.bg-img {
+
+  background-image: url("assets/img5.jpg");
+
+  min-height: 550px;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+</head>
+<body>
+
+  <div class="bg-img">
+
+<div class="card" text-align: center>
+
+    
+        <div class="claim-container" >
+            <p><b>Claim request has sent </b></p>
+            
+            
+               
+                <button class ="button" type="submit"[routerLink]="['/app-dashboard']" ><b>Done</b></button>
+               
+    
+    
+            </div>
+        </div>
+    
+        
+        
+        
+
+</div>
+
+</body>
+</html>

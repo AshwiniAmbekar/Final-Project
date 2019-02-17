@@ -1,0 +1,21 @@
+div {
+    background-color: white;
+    margin: auto;
+  width: 100%;
+  border: 50px solid gainsboro;
+  padding: 180px;
+  }
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    
+    
+  }

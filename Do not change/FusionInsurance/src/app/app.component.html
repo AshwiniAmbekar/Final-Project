@@ -1,0 +1,38 @@
+
+    <div class="header">
+            <h1>Fusion Insurance</h1>
+            <b>All your protection under one roof</b>
+          </div>
+                  
+            
+<div class="navbar">
+        <a id="home" [routerLink]="['/app-home']"><b>Home</b></a>
+        
+        <div class="dropdown">
+                <button class="dropbtn"><b>Plans</b>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                        <a [routerLink]="['/app-comprehensive']">Comprehensive Insurance</a>
+                        <a  [routerLink]="['/app-third-party']">Third Party Insurance </a>
+            
+                </div>
+              </div> 
+
+        
+        <a id="reg" [routerLink]="['/registration-detail']">Register</a>
+        <a id="login" [routerLink]="['/user-login']">Login</a>
+        <a id="adminlogin" [routerLink]="['/app-admin']">Admin Login</a>
+         
+        </div>
+    
+    
+      
+                      
+
+<router-outlet></router-outlet>
+
+
+
+
+

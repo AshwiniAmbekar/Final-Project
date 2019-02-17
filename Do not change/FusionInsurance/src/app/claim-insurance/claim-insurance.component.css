@@ -1,0 +1,19 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 08px;
+    box-sizing: border-box;
+    border: 2px;
+    background-color: gainsboro;
+    color: black;
+    float: center;
+    
+    
+  }
+  div{
+    text-align: center;
+    display: inline;
+  }
+  #claim{
+    text-align: center
+  }
